@@ -3,8 +3,13 @@
 <head>
 <script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>This one is for my Varchhu</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This is for 100 days with my Alice
+</title>
+<!-- heart.css 写生成的爱心的样式 -->
+<link rel="stylesheet" href="./css/heart.css">
+<!-- index.css 主要写页面的样式 -->
+<link rel="stylesheet" href="./css/index.css">
 <style type="text/css">
 @font-face {
 	font-family: digit;
@@ -12,68 +17,68 @@
 }
 </style>
 <link href="css/default.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/garden.js"></script>
 <script type="text/javascript" src="js/functions.js"></script>
-
 </head>
 
 <body>
-
-<div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">/**</span><br />
-			<span class="space"/><span class="comments">*THE CODE OF LOVE</span><br />
-			<span class="space"/><span class="comments">*/</span><br />
-			Hey Girl !<br />
-			Do you remember the day we first met?<br />
-			<span class="comments">// The ET-LAB Friday. </span><br />
-			Since that day a spark begun;<br />
-			<span class="comments">// Your face Your Voice Your Words.</span><br />
-			Your everything got imprinted in my heart;<br />
-			As the time went on;<br />
-			The Bond grew stronger and stronger;<br />
-			Journey from Infatuation to Love;<br />
-			We have traveled a long way together;<br />
-			There have been fights ;<br />
-			<span class="comments">// And I'm sure there will be more.</span><br />
-			But our Bond will always grow back Stronger;<br />
-			<br>
-			<br>
-			All I want to say is:<br />
-			Baby, I will love you forever;<br />
-			<br>
-			<br>
-			Now If you want to hug me you can touch the heart below<br />
-			<br>
-			<span id="heartspan">
-			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
-			</span>
-		</div>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				亲爱的杨小姐<br />
+				今天是遇见你的第一百天。<br />
+				自那天起，一种火花就此燃起。<br />
+				你的脸庞，你的声音，你的呼吸；<br />
+				你的一切都深深印在我的心里；<br />
+				日子一天天过去；<br />
+				每一天都在爱你更多；<br />
+				从吸引到迷恋，再走向爱情；<br />
+				这路漫长，但我会陪你一起走；<br />
+				一起笑，一起哭，一起赶due，一起自由；<br />
+				我们每一天都在爱彼此中成长。<br />
+				<br>
+				我想说：<br />
+				祝我们一百天快乐；<br />
+				我们会拥有所有的未来；<br />
+				[0,100] -> [100, +∞)
+				<br>
+				<br>
+				此刻，如果你想拥抱我，请可以点击下面的心形图标<br />
+				<br>
+				<span id="heartspan">
+					<a href="background.jpg" id="imageLink"><i class="fas fa-heart" id="icon"></i></a>
+				</span>
+						
+			</div>
+	
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
 			<div id="words">
 				<div id="messages">
-					永远 FOREVER
+					Since we met
 					<div id="elapseClock"></div>
 				</div>
 				<div id="loveu">
-					我爱你<br/>
+					I love you<br/>
 					<div class="signature">- 老王</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
+<!-- heart.js 封装爱心 -->
+<script src="./js/heart.js"></script>
+<!-- main -->
+<script src="./js/index.js"></script>
 <script type="text/javascript">
 var offsetX = $("#loveHeart").width() / 2;
 var offsetY = $("#loveHeart").height() / 2 - 55;
 var together = new Date();
-together.setFullYear(2024, 3, 2);
-together.setHours(10);
-together.setMinutes(34);
+together.setFullYear(2024, 1, 3);
+together.setHours(0);
+together.setMinutes(0);
 together.setSeconds(0);
 together.setMilliseconds(0);
 
@@ -99,6 +104,9 @@ if (!document.createElement('canvas').getContext) {
 	adjustCodePosition();
 	$("#code").typewriter();
 }
+
+</script>
+
 </script>
 </body>
 </html>

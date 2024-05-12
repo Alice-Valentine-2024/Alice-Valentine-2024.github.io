@@ -1,0 +1,30 @@
+
+/* js生成的heart标签 */
+.heart-with {
+    position: absolute;
+    background-image: url(heart.png);
+    background-size: cover;
+    pointer-events: none;
+    transform: translate(-50%, -500%);
+    animation: heart_run 2s linear infinite;
+}
+
+@keyframes heart_run {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        /*
+        filter 滤镜属性
+        hue-rotate(deg)	
+        给图像应用色相旋转。"angle"一值设定图像会被调整的色环角度值。值为0deg，则图像无变化。若值未设置，默认值是0deg。
+        该值虽然没有最大值，超过360deg的值相当于又绕一圈。
+        */
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%,-1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}

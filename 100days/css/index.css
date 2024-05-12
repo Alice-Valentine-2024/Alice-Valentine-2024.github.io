@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100px;
+    height: 100hv;
+    background-color: #000;
+    z-index: -1;
+    /* 设置overflow直接隐藏超出边界的部分，不会出现滚动条 */
+    overflow: hidden;
+}
