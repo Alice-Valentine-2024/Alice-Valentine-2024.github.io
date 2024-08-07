@@ -34,7 +34,7 @@
       transition: fill 0.3s;
     }
     .country.hovered {
-      fill: #ffcdd2;
+      fill: #00bcd4;
     }
     .country.visited {
       fill: #e57373;
@@ -43,7 +43,7 @@
       fill: #fff176;
     }
     .country.highlight {
-      fill: #1976d2;
+      fill: #ff0000;
     }
     #info-panel {
       position: absolute;
@@ -92,20 +92,23 @@
       <div id="country-info">Hover over a country to see details</div>
     </div>
   </div>
-  <div id="welcome-message">今天我们来到了俄罗斯！</div>
+  <div id="welcome-message">让我们在七夕一起填补世界地图最大的一块～ 未来要一起去看全世界，宝宝七夕快乐！</div>
 
   <script>
     // Countries you have visited, with the date you visited or the date you will visit.
     const visitedCountries = {
-      'China': '20240101',
-      'United States': '20230510',
-      'France': '20220815'
+      'China': '20240309',
+      'Australia': '20240421',
+      'Fiji': '20240428',
+      'Japan': '20240614',
     };
 
     // Countries you will be visiting
     const upcomingCountries = {
-      'Japan': '20240815',
-      'Italy': '20240710'
+      'Italy': '20240927',
+      'Switzerland': '20240927',
+      'France': '20241002',
+      'Hungary': '20241005',
     };
 
     const width = document.getElementById('map-container').clientWidth;
